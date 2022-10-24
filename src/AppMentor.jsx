@@ -1,14 +1,7 @@
 import React, { useState } from "react";
 
 export default function AppMentor() {
-  const [person, setPerson] = useState({
-    name: "원영",
-    title: "개발자",
-    mentor: {
-      name: "김고수",
-      title: "고수개발자",
-    },
-  });
+  const [person, setPerson] = useState(initialPerson);
   return (
     <div>
       <h1>
@@ -42,3 +35,12 @@ export default function AppMentor() {
     </div>
   );
 }
+
+const initialPerson = {
+  name: "원영",
+  title: "개발자",
+  mentor: {
+    name: "밥",
+    title: "고수개발자",
+  },
+};
